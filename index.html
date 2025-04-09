@@ -1,89 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>diplomado</title>
+	<title>Diplomado</title>
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-	<p></p>
-	<a href="pagina2.html">Ir a la otra pagina</a>
-	<h1>hola mundo</h1>
-	<h2>hola mundo</h2> 
-	<h3>hola mundo</h3>
-	<h4>hola mundo</h4>
-	<h5>hola mundo</h5>
-	<h6>hola mundo</h6>
+
+	<a href="pagina2.html">Ir a la otra página</a>
+
+
 	<h1>THOMAS</h1>
-	<img src="THOMAS_n.jpg" width="150" height="100">
-	<h1>TABALAS</h1>
-	<table border="1">
+	<img src="THOMAS_n.jpg" width="150" height="100" alt="Thomas">
+
+	<h1>TABLAS</h1>
+	<table>
 		<tr>
 			<th>NOMBRES</th>
 			<th colspan="2">CELULAR</th>
 		</tr>
 		<tr>
 			<td>STEVEN</td>
-			<td>3012209960</td>
-			<td>3012209960</td>
+			<td colspan="2">3012209960</td>
 		</tr>
 		<tr>
 			<td>THOMAS</td>
-			<td>3015063677</td>
-			<td>3015063677</td>
+			<td colspan="2">3015063677</td>
 		</tr>
 	</table>
-	<h1>FORMULARIOS</h1>
+
+	<h1>Formulario 1</h1>
 	<form action="Guardar.php" method="POST">
-		NOMBRE:<br>
-		<input type="text" name="NOMBRE"><br>
-		EMAIL:<br> 
-		<input type="email" name="email"><br>
-		<br>
-		<input type="file" name="FOTO"><br>
-		<br>
-		<input type="submit" name="enviar"><br>
-		<br>
-		<input type="button" value="registrar"><br>
-		<br>
-		<input type="checkbox" name="pais1" value="colombia">Colombia<br>
-		<input type="checkbox" name="pais2" value="colombia">Venezuela<br>
-		<input type="checkbox" name="pais3" value="colombia">Mexico <br>
-		<br>
-		<input type="date" name="FechaNacimiento"><br>
-		<br>
-		<input type="color" name="color"><br>
-		<br>
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="NOMBRE" id="nombre">
+
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email">
+
+		<label for="foto">Subir Foto:</label>
+		<input type="file" name="FOTO" id="foto">
+
+		<input type="submit" name="enviar" value="Enviar">
+		<input type="button" value="Registrar">
+
+		<label>País:</label>
+		<input type="checkbox" name="pais1" value="Colombia"> Colombia<br>
+		<input type="checkbox" name="pais2" value="Venezuela"> Venezuela<br>
+		<input type="checkbox" name="pais3" value="Mexico"> México<br>
+
+		<label>Fecha de nacimiento:</label>
+		<input type="date" name="FechaNacimiento">
+
+		<label>Color favorito:</label>
+		<input type="color" name="color">
 	</form>
+
+	<h1>Formulario 2</h1>
 	<form method="POST" action="Guardar.php">
-		EDAD <br>
-		<input type="number" name="edad">
-		<br><br>
-		NOMBRE: <br>
-		<input type="text" name="nombre"><br>
-		<br>
-		GENERO: <br>
-		<input type="radio" name="GENERO">Masculino <br>
-		<input type="radio" name="GENERO">Femenino <br>
-		<br>
-		<input type="text" name="usuario">
-		<input type="password" name="password">
-		<input type="submit" value="enviar">
+		<label for="edad">Edad:</label>
+		<input type="number" name="edad" id="edad">
+
+		<label for="nombre2">Nombre:</label>
+		<input type="text" name="nombre" id="nombre2">
+
+		<label>Género:</label>
+		<input type="radio" name="GENERO" value="Masculino"> Masculino
+		<input type="radio" name="GENERO" value="Femenino"> Femenino
+
+		<label for="usuario">Usuario:</label>
+		<input type="text" name="usuario" id="usuario">
+
+		<label for="password">Contraseña:</label>
+		<input type="password" name="password" id="password">
+
+		<input type="submit" value="Enviar">
 	</form>
-	<h1>FORMULARIOS</h1>
+
+	<h1>Tipos de Carros</h1>
 	<form>
-		TIPOS DE CARROS<br>
 		<select name="Carros">
 			<option value="Volvo">Volvo</option>
-			<option value="chevrolet">Volvo</option>
-			<option value="chevrolet">Chevrolet</option>
+			<option value="Chevrolet">Chevrolet</option>
 			<option value="Fiat">Fiat</option>
 			<option value="Kia">Kia</option>
 		</select>
 	</form>
-	<h1>PRESENTACION </h1>
+
+	<h1>Presentación</h1>
 	<form>
-		<textarea name="presentacion" rows="10" cols="30"></textarea>
+		<textarea name="presentacion" rows="10" cols="30" placeholder="Escribe tu presentación..."></textarea>
 	</form>
+
 </body>
 </html>
